@@ -1,0 +1,83 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Sigmar', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b0bfb5;
+  color: #0e4f20; 
+  font-size: 1rem;
+}
+
+#container {
+  text-align: center;
+}
+
+main, footer {
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e4f20;
+  border-radius: 50%;
+}
+
+h1 span {
+  position: absolute;
+  transform-origin: center;
+  font-size: 1.5rem;
+  color: #0e4f20;
+}
+
+.letter1 { transform: rotate(0deg) translate(140px) rotate(0deg); }
+.letter2 { transform: rotate(30deg) translate(140px) rotate(-30deg); }
+.letter3 { transform: rotate(60deg) translate(140px) rotate(-60deg); }
+.letter4 { transform: rotate(90deg) translate(140px) rotate(-90deg); }
+.letter5 { transform: rotate(120deg) translate(140px) rotate(-120deg); }
+.letter6 { transform: rotate(150deg) translate(140px) rotate(-150deg); }
+.letter7 { transform: rotate(180deg) translate(140px) rotate(-180deg); }
+.letter8 { transform: rotate(210deg) translate(140px) rotate(-210deg); }
+.letter9 { transform: rotate(240deg) translate(140px) rotate(-240deg); }
+.letter10 { transform: rotate(270deg) translate(140px) rotate(-270deg); }
+.letter11 { transform: rotate(300deg) translate(140px) rotate(-300deg); }
+.letter12 { transform: rotate(330deg) translate(140px) rotate(-330deg); }
+
+
+main p {
+  font-size: 1rem;
+  color: #0e4f20;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+footer {
+  position: center;
+  bottom: 10px;
+  font-size: 1em;
+  color: #272e29;
+}

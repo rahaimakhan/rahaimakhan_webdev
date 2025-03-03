@@ -1,0 +1,331 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	background-image: linear-gradient(to right, #87e3fa, #09005c);
+	
+	
+	
+}
+
+
+/*#container {
+	border: 5px solid blue;
+	width: 800px;
+	position: relative; 
+	
+} */
+
+/*div#something {
+	background: red;
+	width: 400px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+	/*transition: background 5s, height 5s;*/
+	transition: all 1s;
+
+	
+	
+} */
+
+div#something:hover {
+	background: yellow;
+	height: 400px;
+	width: 300px;
+	bottom: 400px;
+	right: 200px;
+	transform: rotate(45deg) scale(2);
+	
+} 
+
+/*div#star {
+	background: green;
+	width: 400px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	
+}
+
+
+div#star2 {
+	background: green;
+	width: 400px;
+	height: 300px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	
+} */
+
+
+/*v#base { 
+  position:absolute;
+  width:800px;
+  max-width: 600%;
+  height:500px;
+  background:#85d4ff;
+  top: 60%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -400px;
+} */
+
+
+div#door {
+  position:absolute;
+  width:230px;
+  height:200px;
+  background:#0c1445;
+  bottom:40px;
+  right:48%;
+}
+
+
+div#sun {
+	background: #ffffa1;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	transition: transform 8s linear, background 8s linear;
+	
+	
+}
+
+div#sun:hover {
+	background: white;
+	height: 200px;
+	width: 200px;
+	/*ttom: 400px;*/
+	/*ght: 500px;*/
+	transform: translateX(2300px);
+	box-shadow: 0 0 20px white;
+	
+
+}
+
+
+div#roof {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid black;
+	bottom:200px;
+        right:47%;
+}
+
+div#window1 {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:black;
+  bottom:150px;
+  right:50%;
+}
+
+div#window1:hover {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:yellow;
+  bottom:150px;
+  right:50%;
+  transition: background 0.5s;
+}
+
+div#window2{
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:black;
+  bottom:150px;
+  right:53%;
+}
+
+div#window2:hover {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:yellow;
+  bottom:150px;
+  right:53%;
+  transition: background 0.5s;
+}
+
+div#window3 {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:black;
+  bottom:115px;
+  right:53%;
+
+}
+
+div#window3:hover {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:yellow;
+  bottom:115px;
+  right:53%;
+  transition: background 0.5s;
+}
+
+div#window4 {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:black;
+  bottom:115px;
+  right:50%;
+}
+
+div#window4:hover {
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:yellow;
+  bottom:115px;
+  right:50%;
+  transition: background 0.5s;
+}
+
+div#door2{
+  position:absolute;
+  width:330px;
+  height:700px;
+  background:#0c1445;
+  bottom:40px;
+  right:30%;
+}
+
+
+div#window11 {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:black;
+  bottom:650px;
+  right:31%;
+}
+
+div#window11:hover {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:yellow;
+  bottom:650px;
+  right:31%;
+  transition: background 0.5s;
+}
+
+div#window22 {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:black;
+  bottom:580px;
+  right:31%;
+}
+
+div#window22:hover {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:yellow;
+  bottom:580px;
+  right:31%;
+  transition: background 0.5s;
+}
+
+div#window33 {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:black;
+  bottom:580px;
+  right:37%;
+}
+
+div#window33:hover {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:yellow;
+  bottom:580px;
+  right:37%;
+  transition: background 0.5s;
+}
+
+
+div#window44 {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:black;
+  bottom:650px;
+  right:37%;
+}
+
+div#window44:hover {
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:yellow;
+  bottom:650px;
+  right:37%;
+  transition: background 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

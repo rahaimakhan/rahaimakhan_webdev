@@ -1,0 +1,197 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+body {
+    background-image: url('img/building.jpg'); 
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', serif, sans-serif;
+}
+
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+    text-align: left;
+    text-decoration: cursive;
+    color: #73e6bd;
+}
+
+h2 {
+    text-align: left;
+    text-decoration: cursive;
+    color: #0e5c40;
+}
+
+h2:hover {
+	color: #73e6bd;
+
+}
+
+
+a {
+    color: #f2e161;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#first {
+
+background-color: rgba(51, 4, 4, 0.5);
+padding: 30px;
+
+
+}
+
+#mine {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+
+}
+
+footer {
+	font-size: 0.75em;
+	padding: 5px;
+	color: white;
+
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for laptops. */
+@media all and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #first, #mine {
+        padding: 15px;
+    }
+
+}
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+body {
+        background: black;
+    }
+#container {
+        width: 80%;
+
+    }
+
+
+#first, #mine {
+	width: 100%;
+        padding: 20px;
+		
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+body {
+	background: black;
+
+}
+
+#container {
+	width: 1000px;
+
+
+}
+
+
+#first {
+	float: left;
+	width: 46%;
+
+}
+
+#mine {
+	float: right;
+	width: 46%;
+
+}
+
+
+/*#container {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+        width: 80%;
+	justify-content: space-between; 
+      	
+	
+}
+
+#first, #mine {
+        flex: 1;
+        padding: 20px;
+	max-width: 48%;
+    }
+	
+section {
+	flex: 1;
+        flex-shrink: 0;
+    }*/
+
+
+
+
+	
+} /* closes 1024px+ */
+
+
+

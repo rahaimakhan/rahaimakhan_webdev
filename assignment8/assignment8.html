@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Assignment 8</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gruppo&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+<header>
+<h1>13 Reasons Why You Need A Cat</h1>
+<h2>by my cat</h2>
+</header>
+
+<main>
+
+<button id="something">13 reasons</button>
+
+
+<ol id="first" class="hidden">
+  <li>Companionship</li>
+  <li>Stress Relief</li>
+  <li>Emotional Support</li>
+  <li>Boosts Mood</li>
+  <li>Entertainment</li>
+  <li>Reduces Loneliness</li>
+  <li>Promotes Responsibility</li>
+  <li>Improves Sleep</li>
+  <li>Low Maintenance</li>
+  <li>Increases Physical Activity</li>
+  <li>Pest Control</li>
+  <li>Improves Mental Health</li>
+  <li>Unconditional Love</li>
+</ol>
+
+<button id="monday" class="hidden">Tell Me More</button>
+</p>
+
+
+<p id="second" class="hidden">Why are 13 reasons not enough? </p>
+
+<button id="extra" class="hidden">Watch This!!</button>
+
+
+
+<div id="third" class="hidden">
+<p>Enjoy this cat video!</p>
+<div class="video-wrapper">
+        <iframe id="catVideo" width="560" height="315" src="" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+
+
+</main>
+
+<footer>
+<p>&#169;Rahaima Khan 2025</p>
+</footer
+
+
+  </div><!-- close "container" -->
+  
+  
+  <!-- Paste the jQuery starter code below here -->
+    <!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+  
+$(".hidden").hide();
+
+
+
+$('#something').click(function() {
+
+	$('#first').fadeIn(500);
+	$('#monday').fadeIn(500);
+
+});//close first function
+
+
+$('#monday').click(function() {
+
+	$('#second').fadeIn(500);
+	$('#extra').fadeIn(500);
+
+
+});//close second function
+
+
+$('button#extra').click(function() {
+
+	$('#third').fadeIn(500);
+	$("#catVideo").attr("src", "https://www.youtube.com/embed/RFMuw3xpmFE?autoplay=1");
+
+});//close third function
+
+
+
+  }); //close .ready()
+</script>
+  
+  
+
+</body>
+	
+</html> 

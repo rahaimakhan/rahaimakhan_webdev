@@ -1,0 +1,194 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #000000;	
+color: #ffffff;
+font-family: 'Special Elite', cursive;
+
+
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+}
+
+h1, h2 {
+
+font-family: 'Rye', cursive;
+margin: 1rem 2;
+
+}
+
+nav {
+  margin-top: 5rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-button {
+
+	background-color: #0ecced;
+	color: #0011ff;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Rye', cursive;
+	transition: background-color 0.3s;
+
+}
+
+.nav-button:hover {
+  background-color: #000000;
+  color: #0ecced;
+  border: 1px solid #0ecced;
+       
+}
+
+
+
+main {
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+
+}
+
+.hero {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+footer {
+	
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	font-family: 'Special Elite', cursive;
+
+}
+
+
+.research-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Special Elite', cursive;
+}
+
+
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background-color: #0ecced;
+  color: #0011ff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-family: 'Rye', cursive;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #000;
+  color: #0ecced;
+  border: 1px solid #0ecced;
+}
+
+.tab-content {
+  display: none;
+  padding: 5rem;
+  background-color: #011940;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+}
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+ .hero {
+    font-size: 1.1rem;
+  }
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+  .hero {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}	
+	
+	
+} /* closes 1024px+ */
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Research</title>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass&family=Unica+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+
+  <div class="top-bar">
+    <p class="institute-name">The Hidden Frequency Theory Institute</p>
+  </div>
+
+
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a href="homepage.html" class="nav-link">Home</a></li>
+      <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="joinus.html" class="nav-link">Join Us</a></li>
+      <li><a href="sources.html" class="nav-link">Sources</a></li>
+    </ul>
+  </nav>
+
+<section class="research-section">
+  <!-- Flex Box 1 -->
+  <div id="studyBoxOne" class="study-box teal-variant1">
+    <img src="img/cyan1.jpg" alt="Study 1 Image" class="study-image">
+    <div class="study-content">
+      <h2>The 528 Hz Miracle Tone</h2>
+      <p>The Frequency of DNA Repair
+Scientific studies suggest that 528 Hz, sometimes called the “Love Frequency” or “DNA Repair Frequency,” has profound effects on the human body. Research published by Dr. Elias Hartmann indicates that this frequency can:</p>
+      <div class="hidden-text">
+        <p>Influence the repair of DNA, restore emotional equilibrium, and awaken deeper states of consciousness.The exposure to 528 Hz can reduce stress, enhance clarity, and stimulate the body's natural healing mechanisms. While mainstream science has yet to fully embrace these assertions, the frequency remains a central element in many sound therapy practices and meditative soundtracks due to its calming and uplifting effect.</p>
+      </div>
+      <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+      <a href="sources.html" class="study-link-btn">Full Study</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Flex Box 2 -->
+  <div id="studyBoxTwo" class="study-box teal-variant2">
+    <img src="img/oldlab.jpg" alt="Study 2 Image" class="study-image">
+    <div class="study-content">
+      <h2>Sound Manipulation and the Military</h2>
+      <p>Hidden Frequency Warfare In 1972, classified government documents (later declassified under the Freedom of Information Act) revealed research into low-frequency soundwaves as a psychological weapon. Known as Infrasound Technology, these frequencies were tested for their ability to:</p>
+      <div class="hidden-text">
+        <p>Influence perception, manipulate moods, and even induce sleep or aggression. Historically, there have been reports of military interest in using sound to influence human behavior, induce disorientation, or even disable opponents without physical contact.</p>
+      </div>
+      <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+      <a href="sources.html" class="study-link-btn">Full Study</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Flex Box 3 -->
+  <div id="studyBoxThree" class="study-box teal-variant3">
+    <img src="img/body1.jpg" alt="Study 3 Image" class="study-image">
+    <div class="study-content">
+      <h2>The Cymatics Connection</h2>
+      <p>The Cymatics Connection refers to the visual and scientific study of how sound frequencies physically shape matter. Derived from the Greek word kyma, meaning “wave,” cymatics reveals the hidden geometry of sound by using materials like sand, water, or powders on vibrating surfaces. When specific tones are played, the particles organize into intricate patterns that become more complex with higher frequencies—demonstrating that sound has the power to structure physical reality.</p>
+      <div class="hidden-text">
+        <p>This phenomenon has deep implications for understanding ancient architecture, sacred symbols, and spiritual practices. Many researchers believe cymatics offers a bridge between science and metaphysics, suggesting that ancient civilizations may have used sound intentionally in construction, healing, or ritual. Within the context of the Hidden Frequency Theory, cymatics serves as tangible proof that frequencies aren’t just heard—they shape, influence, and possibly encode information into the very structure of matter.</p>
+      </div>
+      <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+      <a href="sources.html" class="study-link-btn">Full Study</a>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="research-summary-box">
+  <h3>LEAKED AUDIO FILES</h3>
+  <p>The Sound They Don’t Want You to Hear</p>
+
+  <p>In late 2019, an anonymous whistleblower leaked a highly classified audio file believed to have been extracted from a government
+black-site laboratory studying soundwave manipulation. Known as the Hidden Frequency Transmission, this file contains a sequence of
+harmonic tones and infrasonic pulses that defy conventional audio analysis. Sound engineers at the Hidden Frequency Theory Institute (HFTI)
+ran spectral analysis on the file and discovered embedded binaural waveforms that align with suppressed frequencies once used in
+ancient healing practices—frequencies that have been removed from modern technology and communication systems.</p>
+
+  <div class="video-embed-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/J2ZFNjPEDZo" 
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tNicRzW7yw0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+
+
+  <div id="container">
+
+
+
+
+
+  </div><!-- close "container" -->
+  
+<script>
+  function toggleText(button) {
+    const hiddenText = button.closest('.study-box').querySelector('.hidden-text');
+
+    if (hiddenText.classList.contains('show')) {
+      hiddenText.classList.remove('show');
+      button.textContent = "Read More";
+      setTimeout(() => {
+        hiddenText.style.display = 'none';
+      }, 500); // matches the transition time
+    } else {
+      hiddenText.style.display = 'block';
+      void hiddenText.offsetWidth; // force reflow
+      hiddenText.classList.add('show');
+      button.textContent = "Read Less";
+    }
+  }
+</script>
+
+
+<footer class="site-footer">
+  &#169; The Hidden Frequency Theory 2025. All rights reserved.
+</footer>
+
+
+</body>
+	
+</html> 

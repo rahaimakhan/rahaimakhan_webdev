@@ -1,0 +1,1124 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Overpass Mono', monospace;
+  background-color: #e0f7f7;
+  color: #003f4f;
+}
+
+.top-bar {
+  background-color: #9fd0d6;
+  padding: 0.1rem 1rem;
+  text-align: center;
+  color: white;
+  font-family: 'Unica One', sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #007a7a;
+}
+
+
+/* Navbar */
+
+
+
+.main-nav {
+  background-color: #d9f2f2;
+  border-bottom: 1px solid #b8eaea;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #005e5e;
+  font-family: 'Unica One', sans-serif;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: #68c1cc;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #007a7a;
+}
+
+
+/* Navbar closed */
+
+
+.banner-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; 
+  object-fit: cover;
+  display: block;
+}
+
+
+.intro-box {
+  max-width: auto;
+  margin: 2rem auto;
+  padding: 90px;
+  background-color: #d5faff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: #003f4f;
+}
+
+.intro-box h2 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #005661;
+}
+
+.intro-box p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-box {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+
+/* homepage button */
+
+.intro-box button {
+  background-color: #009ca8; /* A strong teal from the theme */
+  color: white;
+  font-family: 'Unica One', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.intro-box button:hover {
+  background-color: #007b84; 
+  transform: scale(1.05);
+}
+
+/* theory in action container */
+
+
+.theory-section {
+  padding: 3rem 1rem;
+  background-color: #e6fbff; 
+}
+
+.theory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #9fd0d6;
+  border-radius: 12px;
+  padding: 2rem;
+  gap: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.theory-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.theory-text {
+  font-family: 'Overpass Mono', monospace;
+  color: #003f4f;
+  max-width: 500px;
+  text-align: center;
+}
+
+.theory-text h2 {
+  font-family: 'Unica One', sans-serif;
+  color: #006d78;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.theory-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.6s ease, max-height 0.6s ease;
+}
+
+.reveal {
+  opacity: 1;
+  max-height: 1000px; /* enough to show full section */
+}
+
+
+/* theory container closed */
+
+
+
+
+/* join us button starts*/
+
+
+
+.join-button {
+  background-color: #008c8c;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Unica One', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #006666;
+  color: #ffffff;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+/* join us button closed */
+
+
+
+.team-container {
+  padding: 40px 0;
+}
+
+
+.team-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+.team-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.team-text {
+  max-width: 500px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.team-text h2 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 2rem;
+  color: #007e89;
+  margin-bottom: 2rem;
+}
+
+.team-text p {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1rem;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+
+/* Team contaoner closed */
+
+
+
+
+.aboutus-button {
+  background-color: #548a86; 
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Unica One', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  max-width: 80px;
+}
+
+.aboutus-button:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+/* home page about us button closed */
+
+
+
+
+.homepage-research-section {
+  padding: 5rem 1rem;
+  text-align: center;
+  background-color: #e6fbff; 
+  font-family: 'Overpass Mono', monospace;
+}
+
+.homepage-research-section h2 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 2.5rem;
+  color: #087682;
+  margin-bottom: 5rem;
+}
+
+.research-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.research-box {
+  background-color: #a3d4d4;
+  border: 2px solid #a3d4d4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.research-box:hover {
+  transform: translateY(-5px);
+}
+
+
+.research-box h3 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.research-box p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+.research-link-box {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.research-link-box .research-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.research-link-box .research-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.homepage-memorial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f7f7;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.homepage-memorial img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-memorial .memorial-text {
+  max-width: 600px;
+  font-family: 'Overpass Mono', monospace;
+  color: #002f2f;
+  text-align: left;
+}
+
+.homepage-memorial .memorial-text h2 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.learn-more-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007f7f; 
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #005f5f;
+  transform: translateY(-2px);
+}
+
+
+/* homepage reseach section closed */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+.institute-quote {
+  padding: 40px 20px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.4em;
+  color: #004d4d;
+  margin: 50px auto;
+  max-width: 700px;
+}
+.institute-quote footer {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #007777;
+}
+
+/* homepage quote closed */
+
+
+.aboutus-intro {
+  background-color: #9fd0d6;
+  padding: 3rem 1rem;
+}
+
+.aboutus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.aboutus-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus-text {
+  font-family: 'Overpass Mono', monospace;
+  color: #003f4f;
+  max-width: 600px;
+  text-align: center;
+}
+
+.aboutus-text h2 {
+  font-family: 'Unica One', sans-serif;
+  color: #003f4f;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.info-intro {
+  padding: 3rem 1rem;
+  background-color: #e6fbff; 
+  text-align: center;
+  color: #003f4f;
+  font-family: 'Overpass Mono', monospace;
+}
+
+.info-intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bullet-points {
+  text-align: left;
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+.aboutus-flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: #d1ebec;
+}
+
+.flexbox {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #2499a6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  font-family: 'Overpass Mono', monospace;
+  color: #faffff;
+  text-align: left;
+}
+
+.flexbox.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flex-img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.flexbox h3 {
+  font-family: 'Unica One', sans-serif;
+  color: #0b3636;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus-conclusion {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1.0rem;
+  color: #003f4f;
+  background-color: #e6fbff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutus-conclusion.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutus-conclusion.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.button-report {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* about us page closed */
+
+
+.memorial {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #96e0e0;
+  border-radius: 12px;
+  font-family: 'Overpass Mono', monospace;
+  overflow: hidden;
+}
+
+.memorial-img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.memorial-text {
+  text-align: left;
+}
+
+
+/* about us memorial section closed */
+
+
+.research-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+
+.study-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0f2f1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.teal-variant1 {
+  background-color: #d9f3f2;
+}
+
+.teal-variant2 {
+  background-color: #c7eae8;
+}
+
+.teal-variant3 {
+  background-color: #b4e0de;
+}
+
+
+.study-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.study-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.study-content {
+  padding: 2rem 1.5rem; /* top/bottom and left/right */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.study-content h3 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+
+
+.hidden-text {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-text.show {
+  display: block;
+  opacity: 1;
+}
+
+
+.read-more-btn,
+.study-link-btn {
+  background-color: #548a86;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Unica One', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-right: 0.8rem;
+  margin-top: 1rem;
+}
+
+.read-more-btn:hover,
+.study-link-btn:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInEffect 0.8s forwards;
+}
+
+@keyframes fadeInEffect {
+  to {
+    opacity: 1;
+  }
+}
+
+.research-summary-box {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Overpass', sans-serif;
+}
+
+.research-summary-box h3 {
+  font-family: 'Unica One', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.research-summary-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.video-embed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.video-embed-container iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* research html page closed */
+
+
+
+
+.joinus-intro {
+  background-color: #e6fbff;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: #003f4f;
+}
+
+.joinus-intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.intro-button-wrapper {
+  margin-top: 1rem;
+}
+
+.intro-button {
+  background-color: #008c8c;
+  color: white;
+  font-family: 'Unica One', sans-serif;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.invite-button:hover {
+  background-color: #006666;
+  transform: scale(1.05);
+}
+
+.joinus-section {
+  background-color: #e6fbff;
+  padding: 4rem 1rem;
+  font-family: 'Overpass Mono', monospace;
+  color: #003f4f;
+}
+
+.joinus-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #d9f3f2;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.joinus-container h2 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007e89;
+}
+
+.joinus-container p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #005e5e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #a3d4d4;
+  border-radius: 6px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1rem;
+  background-color: #ffffff;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #008c8c;
+  color: white;
+  font-family: 'Unica One', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #006666;
+  transform: scale(1.05);
+}
+
+
+/* Center heading and paragraph */
+
+.page-title,
+.page-description {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.sources-page .sources-container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center; 
+  font-family: 'Overpass Mono', monospace;
+  color: #004d4d;
+}
+
+.sources-page .site-footer {
+  margin-top: 0;
+}
+
+.sources-section h2 {
+  font-family: 'Unica One', sans-serif;
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.sources-section ul {
+  list-style-type: none;  
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.sources-section li {
+  margin-bottom: 10px;
+}
+
+
+.sources-section a {
+  text-decoration: none;
+  color: #006666;
+}
+
+.sources-section a:hover {
+  text-decoration: underline;
+  color: #00cccc;
+}
+
+.sources-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.sources-section:last-child {
+  margin-bottom: 1rem; /* or 0 if you want it tighter */
+  padding-bottom: 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 0.9rem;
+  color: #004d4d;
+  border-top: 2px solid #00cccc;
+}
+
+#container {
+	
+}
+
+
+
+
+
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+@media (max-width: 768px) {
+  .research-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .study-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .study-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .study-content {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+
+
+  nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  nav a {
+    flex-shrink: 0;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .research-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .study-box {
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .study-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .study-content {
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+    
+  .aboutus-flex-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexbox {
+    max-width: 90%;
+  }
+}
+
+
+
+.team-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .team-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .aboutus-button {
+    margin: 15px auto 0;
+    display: block;
+  }
+}
+	
+  .memorial-img {
+    float: none;
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+  }
+
+  .memorial-text {
+    text-align: center;
+  }
+}
+
+
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+
+
+	
+	
+} /* closes 1024px+ */
+
+
+
